@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors | Online Game</title>
+    <link rel="canonical" href="https://yourgame.com/" />
+    <style>
+        :root {
+            --primary-blue: #0078FF;
+            --text-gray: #666;
+            --background: #fff;
+            --text-dark: #333;
+            --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            padding: 1rem 0;
+            color: white;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+
+        .game-container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            background: #1a1a1a;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .controls-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .control-group {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .control-group h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .control-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .control-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .control-key {
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        h2 {
+            color: var(--apple-blue);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.8rem;
+        }
+
+        .game-info {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: '•';
+            color: var(--apple-blue);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .game-frame {
+                height: 400px;
+            }
+
+            .game-container,
+            .game-info {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Monster Survivors</a>
+            <div class="nav-links">
+                <a href="#game">Play Now</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#controls">Controls</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Monster Survivors</h1>
+        <p class="tagline">Survive and fight against endless waves of monsters!</p>
+
+        <div id="game" class="game-container">
+            <iframe class="game-frame" src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" title="Monster Survivors Game"></iframe>
+        </div>
+
+        <div id="about">
+            <h2>About Monster Survivors</h2>
+            <p class="tagline">An exciting survival game where your skills and strategy determine how long you can last against endless waves of monsters.</p>
+        </div>
+
+        <div id="features">
+            <h2>Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Multiple Characters</h3>
+                    <p>Choose from various characters, each with unique starting weapons and abilities.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Weapon Evolution</h3>
+                    <p>Combine weapons and passive items to create powerful evolved weapons with special effects.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Level Up System</h3>
+                    <p>Gain experience by defeating enemies and level up to choose new weapons or upgrades.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Boss Battles</h3>
+                    <p>Face off against massive boss monsters that appear at specific time intervals.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Treasure Chests</h3>
+                    <p>Find and open treasure chests to receive random items, gold, or special power-ups.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Daily Challenges</h3>
+                    <p>Complete daily challenges to earn rewards and climb the global leaderboard.</p>
+                </div>
+            </div>
+
+        <div id="controls">
+            <h2>Game Controls</h2>
+            <div class="controls-section">
+                <div class="control-group">
+                    <h3>Keyboard Controls</h3>
+                    <ul class="control-list">
+                        <li><span class="control-key">WASD or Arrow Keys:</span> Move your character</li>
+                        <li><span class="control-key">Space:</span> Pause the game</li>
+                        <li><span class="control-key">E or Enter:</span> Select/Confirm</li>
+                        <li><span class="control-key">Esc:</span> Back/Menu</li>
+                    </ul>
+                </div>
+                <div class="control-group">
+                    <h3>Mobile Controls</h3>
+                    <ul class="control-list">
+                        <li><span class="control-key">Virtual Joystick:</span> Appears on the left side of the screen for movement</li>
+                        <li><span class="control-key">Tap Buttons:</span> Menu and action buttons on the right side</li>
+                        <li><span class="control-key">Swipe:</span> Navigate menus and selection screens</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
